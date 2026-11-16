@@ -1,3 +1,5 @@
+# An application is experiencing failures. We need to analyze logs, identify patterns and detect recurring errors within a time window.
+
 #!/usr/bin/env python3
 """Incident triage across rotated service logs, with a sliding time window."""
 import argparse

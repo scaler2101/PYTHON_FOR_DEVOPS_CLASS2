@@ -1,3 +1,6 @@
+# A company manages servers across multiple environments. 
+# We need to examine an inventory and identify servers that violate operational requirements.
+
 #!/usr/bin/env python3
 """Audit an inventory snapshot. Exit 2 means policy violations were found."""
 import argparse

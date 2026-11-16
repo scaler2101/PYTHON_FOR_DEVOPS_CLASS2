@@ -1,3 +1,7 @@
+# A company exposes information about its services through APIs.
+
+# We need to retrieve information, handle authentication and failures, and generate a consolidated report.
+
 #!/usr/bin/env python3
 """Consolidate paginated service data and incidents from a local platform API."""
 import argparse
