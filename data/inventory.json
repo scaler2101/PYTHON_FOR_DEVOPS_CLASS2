@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-11-16T06:00:00Z",
+  "servers": [
+    {
+      "name": "prod-web-01",
+      "environment": "production",
+      "region": "ap-south-1",
+      "ip": "10.20.1.11",
+      "cpu": 4,
+      "memory_gb": 8,
+      "owner": "commerce",
+      "backup_enabled": true,
+      "monitoring_enabled": true
+    },
+    {
+      "name": "prod-api-02",
+      "environment": "production",
+      "region": "ap-south-1",
+      "ip": "10.20.1.12",
+      "cpu": 1,
+      "memory_gb": 4,
+      "owner": "payments",
+      "backup_enabled": false,
+      "monitoring_enabled": true
+    },
+    {
+      "name": "prod-worker-03",
+      "environment": "production",
+      "region": "eu-west-1",
+      "ip": "10.20.3.13",
+      "cpu": 2,
+      "memory_gb": 8,
+      "owner": "fulfillment",
+      "backup_enabled": true,
+      "monitoring_enabled": false
+    },
+    {
+      "name": "staging-api-01",
+      "environment": "staging",
+      "region": "ap-south-1",
+      "ip": "10.30.1.14",
+      "cpu": 1,
+      "memory_gb": 2,
+      "owner": "platform",
+      "backup_enabled": false,
+      "monitoring_enabled": true
+    },
+    {
+      "name": "prod-cache-04",
+      "environment": "production",
+      "region": "eu-west-1",
+      "ip": "10.20.3.13",
+      "cpu": 4,
+      "memory_gb": 16,
+      "owner": "platform",
+      "backup_enabled": true,
+      "monitoring_enabled": true
+    },
+    {
+      "name": "prod-batch-05",
+      "environment": "production",
+      "region": "ap-south-1",
+      "ip": "10.20.1.15",
+      "cpu": 8,
+      "memory_gb": 16,
+      "backup_enabled": true,
+      "monitoring_enabled": true
+    },
+    {
+      "name": "dev-test-01",
+      "environment": "development",
+      "region": "ap-south-1",
+      "ip": "10.40.1.21",
+      "cpu": 1,
+      "memory_gb": 1,
+      "owner": "sandbox",
+      "backup_enabled": false,
+      "monitoring_enabled": false
+    },
+    {
+      "name": "prod-gateway-06",
+      "environment": "production",
+      "region": "us-east-1",
+      "ip": "10.20.4.16",
+      "cpu": 4,
+      "memory_gb": 8,
+      "owner": "edge",
+      "backup_enabled": true,
+      "monitoring_enabled": true
+    }
+  ]
+}

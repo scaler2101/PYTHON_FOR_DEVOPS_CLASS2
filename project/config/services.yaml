@@ -1,0 +1,22 @@
+# Policy belongs in config so operations can change thresholds without code edits.
+defaults:
+  max_latency_ms: 500
+  max_attempts: 3
+  timeout_seconds: 2
+services:
+  - id: checkout-api
+    owner: commerce
+    critical: true
+  - id: payments-api
+    owner: payments
+    critical: true
+    max_latency_ms: 400
+  - id: catalog-api
+    owner: commerce
+    critical: false
+  - id: notification-worker
+    owner: platform
+    critical: true
+  - id: identity-api
+    owner: security
+    critical: true

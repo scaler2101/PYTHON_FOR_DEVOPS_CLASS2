@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+project/out/
+*.sqlite3
+.env
+*.log.bak

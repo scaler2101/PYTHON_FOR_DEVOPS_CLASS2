@@ -1,0 +1,21 @@
+# Configuration is operational policy, not Python source code.
+defaults:
+  timeout_seconds: 2
+  max_attempts: 3
+  max_latency_ms: 500
+services:
+  - id: checkout-api
+    owner: commerce
+    critical: true
+  - id: payments-api
+    owner: payments
+    critical: true
+  - id: catalog-api
+    owner: commerce
+    critical: false
+  - id: notification-worker
+    owner: platform
+    critical: true
+  - id: identity-api
+    owner: security
+    critical: true
