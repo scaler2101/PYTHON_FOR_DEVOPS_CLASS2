@@ -4,7 +4,7 @@
 #!/usr/bin/env python3
 """Audit an inventory snapshot. Exit 2 means policy violations were found."""
 import argparse
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict # Counter(['a', 'b', 'a']) gives {'a': 2, 'b': 1}).
 import json
 from pathlib import Path
 
