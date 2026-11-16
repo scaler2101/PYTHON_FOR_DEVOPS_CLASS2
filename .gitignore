@@ -5,3 +5,4 @@ project/out/
 *.sqlite3
 .env
 *.log.bak
+.DS_Store
